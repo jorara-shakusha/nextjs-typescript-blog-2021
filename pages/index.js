@@ -9,9 +9,16 @@ export default function Home({ allPostsData }) {
   return (
     <Layout home>
       <Head>
-        <title>{siteTitle}</title>
+        {/* <title>{siteTitle}</title> */}
+        <title>Next.js ブログ タイトルの変更はpages/index.ts</title>
       </Head>
       <section className={utilStyles.headingMd}>
+        <h1 className="title">
+          READ{' '}
+          <Link href="/posts/first-post">
+            <a>this page!</a>
+          </Link>
+        </h1>
         <p>[Next.js SSG のブログのチュートリアルです。]</p>
         <p>
           (This is a sample website - you’ll be building a site like this in{' '}
